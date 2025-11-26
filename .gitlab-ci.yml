@@ -1,0 +1,13 @@
+stages:
+  - deploy
+
+pages:
+  stage: deploy
+  script:
+    - echo "Deploying static site for Kurban Sofiia LK-32"
+  artifacts:
+    paths:
+      - public
+  only:
+    - main
+    - master
